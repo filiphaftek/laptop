@@ -25,14 +25,10 @@ Install
 Download, review, then execute the script:
 
 ```sh
-curl --remote-name https://raw.githubusercontent.com/thoughtbot/laptop/master/mac
+curl --remote-name https://raw.githubusercontent.com/AirHelp/laptop/master/mac
 less mac
 sh mac 2>&1 | tee ~/laptop.log
 ```
-
-Optionally, [install thoughtbot/dotfiles][dotfiles].
-
-[dotfiles]: https://github.com/thoughtbot/dotfiles#install
 
 Debugging
 ---------
@@ -40,7 +36,7 @@ Debugging
 Your last Laptop run will be saved to `~/laptop.log`.
 Read through it to see if you can debug the issue yourself.
 If not, copy the lines where the script failed into a
-[new GitHub Issue](https://github.com/thoughtbot/laptop/issues/new) for us.
+[new GitHub Issue](https://github.com/AirHelp/laptop/issues/new) for us.
 Or, attach the whole log file as an attachment.
 
 What it sets up
@@ -54,44 +50,25 @@ Mac OS X tools:
 
 Unix tools:
 
-* [Exuberant Ctags] for indexing files for vim tab completion
 * [Git] for version control
 * [OpenSSL] for Transport Layer Security (TLS)
-* [RCM] for managing company and personal dotfiles
-* [The Silver Searcher] for finding things in files
-* [Tmux] for saving project state and switching between projects
 * [Zsh] as your shell
+* [Docker] for managing docker containers
 
-[Exuberant Ctags]: http://ctags.sourceforge.net/
+Applications:
+* [Slack] for company communication
+* [1Passowrd] for managing passwords
+* [iTerm2] as terminal
+* [virtualbox] for virtualization
+
 [Git]: https://git-scm.com/
 [OpenSSL]: https://www.openssl.org/
-[RCM]: https://github.com/thoughtbot/rcm
-[The Silver Searcher]: https://github.com/ggreer/the_silver_searcher
-[Tmux]: http://tmux.github.io/
 [Zsh]: http://www.zsh.org/
-
-Heroku tools:
-
-* [Heroku Toolbelt] and [Parity] for interacting with the Heroku API
-
-[Heroku Toolbelt]: https://toolbelt.heroku.com/
-[Parity]: https://github.com/thoughtbot/parity
-
-GitHub tools:
-
-* [Hub] for interacting with the GitHub API
-
-[Hub]: http://hub.github.com/
-
-Image tools:
-
-* [ImageMagick] for cropping and resizing images
-
-Testing tools:
-
-* [Qt] for headless JavaScript testing via Capybara Webkit
-
-[Qt]: http://qt-project.org/
+[Docker]: https://www.docker.com/
+[Slack]: https://slack.com/
+[1Password]: https://agilebits.com/
+[iTerm2]: https://www.iterm2.com/
+[virtualbox]: https://www.virtualbox.org/
 
 Programming languages and configuration:
 

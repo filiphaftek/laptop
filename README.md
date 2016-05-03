@@ -57,7 +57,7 @@ Unix tools:
 
 Applications:
 * [Slack] for company communication
-* [1Passowrd] for managing passwords
+* [1Password] for managing passwords
 * [iTerm2] as terminal
 * [virtualbox] for virtualization
 

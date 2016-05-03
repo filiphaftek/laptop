@@ -109,6 +109,7 @@ brew "zsh"
 brew "libyaml" # should come after openssl
 brew "node"
 brew "rbenv"
+brew "rbenv-bundler"
 brew "ruby-build"
 
 # Docker

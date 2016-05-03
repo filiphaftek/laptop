@@ -127,6 +127,9 @@ brew cask install iterm2
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
 
+# Cleanup the downloaded files
+brew cask cleanup
+
 fancy_echo "Configuring Ruby ..."
 find_latest_ruby() {
   rbenv install -l | grep -v - | tail -1 | sed -e 's/^ *//'

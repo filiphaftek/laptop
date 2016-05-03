@@ -1,8 +1,8 @@
 #!/bin/sh
-
 # Welcome to the thoughtbot laptop script!
 # Be prepared to turn your laptop (or desktop, no haters here)
 # into an awesome development machine.
+
 
 fancy_echo() {
   local fmt="$1"; shift
@@ -96,32 +96,14 @@ fi
 fancy_echo "Updating Homebrew formulae ..."
 brew update
 brew bundle --file=- <<EOF
-tap "thoughtbot/formulae"
+tap "caskroom/cask"
 tap "homebrew/services"
 
 # Unix
-brew "ctags"
 brew "git"
 brew "openssl"
-brew "rcm"
-brew "reattach-to-user-namespace"
-brew "the_silver_searcher"
-brew "tmux"
 brew "vim"
 brew "zsh"
-
-# Heroku
-brew "heroku-toolbelt"
-brew "parity"
-
-# GitHub
-brew "hub"
-
-# Image manipulation
-brew "imagemagick"
-
-# Testing
-brew "qt"
 
 # Programming languages
 brew "libyaml" # should come after openssl
@@ -129,10 +111,20 @@ brew "node"
 brew "rbenv"
 brew "ruby-build"
 
+# Docker
+brew "docker"
+brew "docker-machine"
+brew "docker-compose"
+
 # Databases
 brew "postgres", restart_service: true
 brew "redis", restart_service: true
 EOF
+
+brew cask install slack
+brew cask install 1password
+brew cask install iterm2
+brew cask install virtualbox
 
 fancy_echo "Configuring Ruby ..."
 find_latest_ruby() {

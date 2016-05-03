@@ -125,6 +125,7 @@ brew cask install slack
 brew cask install 1password
 brew cask install iterm2
 brew cask install virtualbox
+brew cask install virtualbox-extension-pack
 
 fancy_echo "Configuring Ruby ..."
 find_latest_ruby() {

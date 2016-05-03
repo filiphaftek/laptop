@@ -112,6 +112,9 @@ brew "rbenv"
 brew "rbenv-bundler"
 brew "ruby-build"
 
+# Testing
+brew "phantomjs"
+
 # Docker
 brew "docker"
 brew "docker-machine"

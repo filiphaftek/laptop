@@ -112,6 +112,7 @@ brew "npm"
 brew "rbenv"
 brew "rbenv-bundler"
 brew "ruby-build"
+brew "go"
 
 # Testing
 brew "phantomjs"
@@ -161,3 +162,6 @@ if [ -f "$HOME/.laptop.local" ]; then
   # shellcheck disable=SC1090
   . "$HOME/.laptop.local"
 fi
+
+mkdir -p ~/go
+append_to_zshrc 'export GOPATH="$HOME/go"'
